@@ -82,3 +82,41 @@ Available actions
 
 Source: Salesforce + ImpactPulse demo data | Updated: [timestamp]
 ```
+### Approval flows
+
+#### Risk escalation approval
+
+```text
+ImpactPulse approval request
+
+Action: Escalate the Salesforce Career Foundations completion-risk to the Executive Director.
+
+This will:
+1. Create a high-priority Salesforce Task assigned to the Executive Director.
+2. Record the escalation in the ImpactPulse audit log.
+3. Mark the risk as escalated in Supabase.
+
+Evidence:
+- Completion rate: 42% vs. 65% target
+- 18 learners stalled in the last 14 days
+- 2 mentors available for 18 learners needing support
+
+[Approve escalation] [Reject]
+```
+
+#### Board brief approval
+
+```text
+ImpactPulse approval request
+
+Action: Approve this board brief for internal review.
+
+This will:
+1. Mark the board brief as approved in ImpactPulse.
+2. Create a Salesforce Task for the executive/board liaison to distribute or review it.
+3. Record the approval in the audit log.
+
+This will not send an external email or publish data automatically.
+
+[Approve board brief] [Reject]
+```
