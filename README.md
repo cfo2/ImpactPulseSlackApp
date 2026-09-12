@@ -120,3 +120,22 @@ This will not send an external email or publish data automatically.
 
 [Approve board brief] [Reject]
 ```
+
+#### Board brief approval
+
+```text
+ImpactPulse approval request
+
+Action: Approve this board brief for internal review.
+
+This will:
+1. Mark the board brief as approved in ImpactPulse.
+2. Create a Salesforce Task for the executive/board liaison to distribute or review it.
+3. Record the approval in the audit log.
+
+This will not send an external email or publish data automatically.
+
+[Approve board brief] [Reject]
+```
+
+
